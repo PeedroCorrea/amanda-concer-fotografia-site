@@ -1,8 +1,5 @@
 import { siteConfig } from './site.config.js';
 
-// O servidor conta um navegador por identificador aleatório; não recebe dados da reserva.
-fetch('/api/visit', { method: 'POST', credentials: 'same-origin', keepalive: true }).catch(() => {});
-
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
 const menuButton = $('.menu-toggle');
